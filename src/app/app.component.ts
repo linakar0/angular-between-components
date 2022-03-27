@@ -21,4 +21,11 @@ arg = " do serwisu";
     console.log(this.userService.getData2())
     console.log(this.userService.getData3(this.arg))
   }
+
+  getUserData(){
+    this.userService.getData()
+    console.log(this.userService.x)
+    console.log(this.userService.getData2())
+    console.log(this.userService.getData3(this.arg))
+  }
 }
