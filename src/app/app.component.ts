@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'my-app',
@@ -7,4 +8,14 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+
+
+  constructor(private userService:UserService) {
+    
+  }
+
+
+  ngOnInit(){
+    this.userService.getData()
+  }
 }

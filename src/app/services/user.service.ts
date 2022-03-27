@@ -5,4 +5,8 @@ export class UserService {
 
   constructor() { }
 
+  getData() {
+    console.log('Przekazanie danych');
+  }
+
 }
