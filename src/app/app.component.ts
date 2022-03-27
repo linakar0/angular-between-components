@@ -17,5 +17,6 @@ export class AppComponent  {
 
   ngOnInit(){
     this.userService.getData()
+    console.log(this.userService.x)
   }
 }

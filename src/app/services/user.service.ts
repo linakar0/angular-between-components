@@ -9,4 +9,6 @@ export class UserService {
     console.log('Przekazanie danych');
   }
 
+  x = 10;
+
 }
