@@ -8,7 +8,7 @@ import { UserService } from './services/user.service';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
-
+arg = " do serwisu";
 
   constructor(private userService:UserService) {
     
@@ -18,5 +18,7 @@ export class AppComponent  {
   ngOnInit(){
     this.userService.getData()
     console.log(this.userService.x)
+    console.log(this.userService.getData2())
+    console.log(this.userService.getData3(this.arg))
   }
 }

@@ -11,4 +11,13 @@ export class UserService {
 
   x = 10;
 
+  mess="wiadomość"
+  getData2(){
+    return this.mess
+  }
+  getData3(param){
+    param = `${param} oj tam `
+    return param;
+  }
+
 }
